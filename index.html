@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | RAKOTOVAO Tiaviniaina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="left-panel">
+        <div class="profile-wrapper">
+            <div class="profile-circle">
+                <img src="profile.jpg" alt="Tiaviniaina Princio">
+            </div>
+            <h1 class="name-tag">Tiaviniaina<span>Princio</span></h1>
+        </div>
+    </div>
+
+    <div class="right-panel" id="menu-container">
+        <div class="menu-btn b-orange" onclick="showSection('sec-profil')">
+            <div class="btn-icon"><i class="fas fa-user-tie"></i></div>
+            <div class="btn-text">VOIR LE PROFIL</div>
+        </div>
+
+        <div class="menu-btn b-blue" onclick="showSection('sec-projets')">
+            <div class="btn-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="btn-text">PROJETS RÉALISÉS</div>
+        </div>
+
+        <div class="menu-btn b-red" onclick="showSection('sec-liens')">
+            <div class="btn-icon"><i class="fas fa-external-link-alt"></i></div>
+            <div class="btn-text">LIENS EXTERNES</div>
+        </div>
+
+        <div class="menu-btn b-purple" onclick="showSection('sec-temoignages')">
+            <div class="btn-icon"><i class="fas fa-star"></i></div>
+            <div class="btn-text">TÉMOIGNAGES</div>
+        </div>
+
+        <div class="menu-btn b-teal" onclick="showSection('sec-contact')">
+            <div class="btn-icon"><i class="fas fa-envelope"></i></div>
+            <div class="btn-text">CONTACT</div>
+        </div>
+
+        <div class="menu-btn b-green" onclick="showSection('sec-newsletter')">
+            <div class="btn-icon"><i class="fas fa-bell"></i></div>
+            <div class="btn-text">NEWSLETTER</div>
+        </div>
+    </div>
+
+    <div id="details-container" class="details-panel hidden">
+        <button class="cancel-btn" onclick="hideSection()"><i class="fas fa-times"></i></button>
+        
+        <div id="sec-profil" class="content-section hidden">
+            <h2 class="title">PROFIL PROFESSIONNEL</h2>
+            <div class="card c-1"><h3>Nom:</h3> <p>RAKOTOVAO Tiaviniaina Princio</p></div>
+            <div class="card c-2"><h3>Titre:</h3> <p>Étudiant L3 Télécommunications – Réseaux & Systèmes</p></div>
+            <div class="card c-3"><h3>Résumé:</h3> <p>"Étudiant dynamique... expert en IA générative et automatisation."</p></div>
+            <div class="card c-4"><h3>Formation:</h3> <p>❖2023-2026: L3 Télécoms (ES2I) <br> ❖2023: Bac C</p></div>
+            <div class="card c-5"><h3>Compétences:</h3> <p>Cisco, Linux, VoIP, IA & No-Code.</p></div>
+            <a href="cv-tiavina-rakotovao.pdf" class="btn-download">TÉLÉCHARGER LE CV (PDF)</a>
+        </div>
+
+        <div id="sec-projets" class="content-section hidden">
+            <h2 class="title">MES PROJETS</h2>
+            <div class="proj-box">
+                <img src="cisco-topology.jpg" alt="Projet 1">
+                <h4>Infrastructure Multi-sites</h4>
+                <p>Cisco Packet Tracer, OSPF, VLANs.</p>
+            </div>
+            <div class="proj-box">
+                <img src="voip-server.jpg" alt="Projet 2">
+                <h4>Serveur VoIP Asterisk</h4>
+                <p>Linux Debian, Protocole SIP.</p>
+            </div>
+            <div class="proj-box">
+                <img src="ai-assistant.jpg" alt="Projet 3">
+                <h4>Assistant IA Réseau</h4>
+                <p>OpenAI API, Make, Python.</p>
+            </div>
+        </div>
+
+        <div id="sec-liens" class="content-section hidden">
+            <h2 class="title">LIENS EXTERNES</h2>
+            <div class="card link-card"><a href="https://github.com/tiavina"><img src="github.svg" class="svg-icon"> GitHub</a></div>
+            <div class="card link-card"><a href="https://www.linkedin.com/in/tiavina-ramarolahy-552177364"><img src="linkedin.svg" class="svg-icon"> LinkedIn</a></div>
+            <div class="card link-card"><a href="https://tiavina.pythonanywhere.com"><i class="fas fa-globe"></i> Site Personnel</a></div>
+        </div>
+
+        <div id="sec-contact" class="content-section hidden">
+            <h2 class="title">FORMULAIRE DE CONTACT</h2>
+            <form>
+                <input type="text" placeholder="Nom: Tiavina">
+                <input type="email" placeholder="Email: princiotiaviniaina240906@gmail.com">
+                <textarea placeholder="Votre message..."></textarea>
+                <button type="button" class="btn-submit">Envoyer le message</button>
+            </form>
+            <div class="card info-card">
+                <p>📞 +261 38 53 132 94</p>
+                <p>📍 Andranomena Ambohimanarina</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
